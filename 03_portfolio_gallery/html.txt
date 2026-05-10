@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">Your Name</div>
+
+            <!-- Hamburger -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
+
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Phong</span></h1>
+            <p>Full-Stack Developer | UI Designer | Problem Solver</p>
+            <a href="#portfolio" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400x400/6366f1/ffffff?text=Your+Photo" alt="Profile Photo">
+                </div>
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p class="lead">I'm a passionate Full-Stack Developer with 3+ years of experience building beautiful
+                        and functional web applications.</p>
+                    <p>Specialized in modern frontend technologies like React, Vue, and Tailwind. I also enjoy working
+                        with Node.js and Python on the backend.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <span class="skill-name">HTML5</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">CSS3</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">React</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2>My Portfolio</h2>
+
+            <!-- Filter Buttons -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Web</button>
+                <button class="filter-btn">Mobile</button>
+                <button class="filter-btn">Design</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+
+                <!-- Project 1 -->
+                <a href="#lightbox-1" class="portfolio-item" data-category="web">
+                    <img src="https://via.placeholder.com/600x400/6366f1/ffffff?text=Ecommerce"
+                        alt="E-Commerce Website">
+                    <div class="portfolio-overlay">
+                        <h3>E-Commerce Platform</h3>
+                        <p>React & Node.js</p>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="#lightbox-2" class="portfolio-item" data-category="web">
+                    <img src="https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Dashboard" alt="Dashboard">
+                    <div class="portfolio-overlay">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Next.js & Tailwind</p>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="#lightbox-3" class="portfolio-item" data-category="mobile">
+                    <img src="https://via.placeholder.com/600x400/6366f1/ffffff?text=Mobile+App" alt="Mobile App">
+                    <div class="portfolio-overlay">
+                        <h3>Food Delivery App</h3>
+                        <p>Flutter</p>
+                    </div>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="#lightbox-4" class="portfolio-item" data-category="web">
+                    <img src="https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Blog" alt="Blog Website">
+                    <div class="portfolio-overlay">
+                        <h3>Personal Blog</h3>
+                        <p>Vue.js & Firebase</p>
+                    </div>
+                </a>
+
+                <!-- Project 5 -->
+                <a href="#lightbox-5" class="portfolio-item" data-category="design">
+                    <img src="https://via.placeholder.com/600x400/6366f1/ffffff?text=UI+Kit" alt="UI Design">
+                    <div class="portfolio-overlay">
+                        <h3>UI/UX Design Kit</h3>
+                        <p>Figma</p>
+                    </div>
+                </a>
+
+                <!-- Project 6 -->
+                <a href="#lightbox-6" class="portfolio-item" data-category="mobile">
+                    <img src="https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Social+App" alt="Social App">
+                    <div class="portfolio-overlay">
+                        <h3>Social Media App</h3>
+                        <p>React Native</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Items -->
+    <div id="lightbox-1" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="https://via.placeholder.com/800x600/6366f1/ffffff?text=Ecommerce" alt="E-Commerce Website">
+    </div>
+
+    <div id="lightbox-2" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="https://via.placeholder.com/800x600/8b5cf6/ffffff?text=Dashboard" alt="Analytics Dashboard">
+    </div>
+
+    <div id="lightbox-3" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="https://via.placeholder.com/800x600/6366f1/ffffff?text=Mobile+App" alt="Food Delivery App">
+    </div>
+
+    <div id="lightbox-4" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="https://via.placeholder.com/800x600/8b5cf6/ffffff?text=Blog" alt="Personal Blog">
+    </div>
+
+    <div id="lightbox-5" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="https://via.placeholder.com/800x600/6366f1/ffffff?text=UI+Kit" alt="UI Design Kit">
+    </div>
+
+    <div id="lightbox-6" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="https://via.placeholder.com/800x600/8b5cf6/ffffff?text=Social+App" alt="Social Media App">
+    </div>
+
+</body>
+
+</html>
